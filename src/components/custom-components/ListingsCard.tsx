@@ -6,15 +6,15 @@ import * as motion from 'motion/react-client';
 type ListingCardProps = {
   imageUrl?: string;
   listingId: string;
-  status: string;
+  status: 'pending' | 'published';
   listingName: string;
   amount: string;
   address: string;
   numberOfSpace: number;
   dateOfListing: string;
-  viewListing?: (id: string) => {};
-  editListing?: (id: string) => {};
-  deleteListing?: (id: string) => {};
+  viewListing?: (id: string) => void;
+  editListing?: (id: string) => void;
+  deleteListing?: (id: string) => void;
 };
 
 export default function ListingsCard({
@@ -61,7 +61,7 @@ export default function ListingsCard({
               className={`py-1 px-4 rounded-3xl flex items-center justify-center text-xs md:text-sm ${
                 status === 'pending'
                   ? 'bg-[#E6A4B4] text-[#CE5959]'
-                  : 'bg-[#16C47F] text-[#347928]'
+                  : 'bg-[#2bc688] text-[#347928]'
               }`}
             >
               {status}
@@ -94,6 +94,7 @@ export default function ListingsCard({
 
           <div className={`flex items-center justify-end space-x-3`}>
             <motion.span
+              onClick={() => editListing?.(listingId)}
               whileHover={{
                 scale: 1.2,
                 transition: { duration: 0.5, ease: [0, 0.71, 0.2, 1.01] },
@@ -104,6 +105,7 @@ export default function ListingsCard({
             </motion.span>
 
             <motion.span
+              onClick={() => viewListing?.(listingId)}
               whileHover={{
                 scale: 1.2,
                 transition: { duration: 0.5, ease: [0, 0.71, 0.2, 1.01] },
@@ -114,6 +116,7 @@ export default function ListingsCard({
             </motion.span>
 
             <motion.span
+              onClick={() => deleteListing?.(listingId)}
               whileHover={{
                 scale: 1.2,
                 transition: { duration: 0.5, ease: [0, 0.71, 0.2, 1.01] },

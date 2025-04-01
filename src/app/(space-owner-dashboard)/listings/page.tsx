@@ -7,11 +7,26 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 import { SlidersHorizontal, Plus, Search } from 'lucide-react';
 import ListingsCard from '@/components/custom-components/ListingsCard';
 
 export default function Listings() {
+  const router = useRouter();
+
+  const handleViewListing = (id: string) => {
+    router.push(`/list-space/${id}`);
+  };
+
+  const handleEditListing = (id: string) => {
+    router.push(`/list-space/${id}`);
+  };
+
+  const handleDeleteListing = (id: string) => {
+    console.log(`${id}`);
+  };
+
   return (
     <section className={`px-3 py-3 md:px-10 md:py-8 space-y-5`}>
       <div className={`flex items-center justify-between`}>
@@ -20,6 +35,7 @@ export default function Listings() {
         >
           <h2>Listings</h2>
         </div>
+
         <div className={``}>
           <Link
             href={`/list-space`}
@@ -121,28 +137,9 @@ export default function Listings() {
             numberOfSpace={3}
             status='pending'
             imageUrl=''
-          />
-
-          <ListingsCard
-            address='No. 10, Otun street, Abule-Ijesha, Yaba Lagos Nigeria'
-            dateOfListing='March 10th, 2025'
-            amount='3500'
-            listingId='123409876'
-            listingName='Apiangwo lounge'
-            numberOfSpace={3}
-            status='pending'
-            imageUrl=''
-          />
-
-          <ListingsCard
-            address='No. 10, Otun street, Abule-Ijesha, Yaba Lagos Nigeria'
-            dateOfListing='March 10th, 2025'
-            amount='3500'
-            listingId='123409876'
-            listingName='Apiangwo lounge'
-            numberOfSpace={3}
-            status='pending'
-            imageUrl=''
+            editListing={handleEditListing}
+            viewListing={handleViewListing}
+            deleteListing={handleDeleteListing}
           />
         </section>
       </div>

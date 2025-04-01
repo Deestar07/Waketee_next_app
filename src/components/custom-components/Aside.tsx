@@ -44,8 +44,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center ${
               pathName.startsWith('/space-owner-dashboard')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/space-owner-dashboard`}
           >
@@ -62,8 +62,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/listings')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/listings`}
           >
@@ -80,8 +80,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/list-space')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/list-space`}
           >
@@ -98,8 +98,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/bookings')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/bookings`}
           >
@@ -116,8 +116,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/account')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/account`}
           >
@@ -134,8 +134,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/earnings')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/earnings`}
           >
@@ -154,8 +154,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center  ${
               pathName === '/check-in'
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/check-in`}
           >
@@ -172,8 +172,8 @@ export default function Aside() {
           <Link
             className={`px-5 py-2 font-semibold flex items-center  ${
               pathName === '/check-in/check-out'
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/check-in/check-out`}
           >
@@ -188,7 +188,7 @@ export default function Aside() {
           </Link>
 
           <div
-            className={`px-5 py-2 font-semibold flex items-center text-[#FFFFFF] cursor-pointer`}
+            className={`px-5 py-2 font-semibold flex items-center text-[#EFEFEF] cursor-pointer`}
           >
             <span className={`mr-2 flex items-center justify-center`}>
               <LogOut size={18} />
@@ -227,8 +227,8 @@ export default function Aside() {
             onClick={() => handleCloseMobileNav()}
             className={`px-20 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/listings')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/listings`}
           >
@@ -246,8 +246,8 @@ export default function Aside() {
             onClick={() => handleCloseMobileNav()}
             className={`px-20 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/list-space')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/list-space`}
           >
@@ -265,8 +265,8 @@ export default function Aside() {
             onClick={() => handleCloseMobileNav()}
             className={`px-20 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/bookings')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/bookings`}
           >
@@ -284,8 +284,8 @@ export default function Aside() {
             onClick={() => handleCloseMobileNav()}
             className={`px-20 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/account')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/account`}
           >
@@ -303,8 +303,8 @@ export default function Aside() {
             onClick={() => handleCloseMobileNav()}
             className={`px-20 py-2 font-semibold flex items-center  ${
               pathName.startsWith('/earnings')
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/earnings`}
           >
@@ -324,8 +324,8 @@ export default function Aside() {
             onClick={() => handleCloseMobileNav()}
             className={`px-20 py-2 font-semibold flex items-center  ${
               pathName === '/check-in'
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/check-in`}
           >
@@ -343,8 +343,8 @@ export default function Aside() {
             onClick={() => handleCloseMobileNav()}
             className={`px-20 py-2 font-semibold flex items-center  ${
               pathName === '/check-in/check-out'
-                ? 'text-[#2B4B1B] bg-[#FFFFFF]'
-                : 'text-[#FFFFFF] bg-transparent'
+                ? 'text-[#2B4B1B] bg-[#EFEFEF]'
+                : 'text-[#EFEFEF] bg-transparent'
             } `}
             href={`/check-in/check-out`}
           >
@@ -359,7 +359,7 @@ export default function Aside() {
           </Link>
 
           <div
-            className={`px-20 py-2 font-semibold flex items-center text-[#FFFFFF] cursor-pointer`}
+            className={`px-20 py-2 font-semibold flex items-center text-[#EFEFEF] cursor-pointer`}
           >
             <span className={`mr-2 flex items-center justify-center`}>
               <LogOut size={18} />
